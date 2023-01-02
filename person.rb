@@ -6,23 +6,23 @@ class Person
           @parents_permission = parents_permission
   end
 
-  def getId
+  def get_id
     puts @id
   end
 
-  def getName
+  def get_name
     puts @name
   end
 
-  def getAge
+  def get_age
     puts @age
   end
 
-  def setName=(name)
+  def set_name=(name)
     @name = name
   end
 
-  def setAge=(age)
+  def set_age=(age)
     @age = age
   end
 
