@@ -1,9 +1,9 @@
 class Person
-  def initialize(id, name, age, parents_permission = "Unknown")
+  def initialize(id, name, age, parents_permission = 'Unknown')
     @id = id,
-    @name = name,
-    @age = age,
-    @parents_permission = parents_permission
+          @name = name,
+          @age = age,
+          @parents_permission = parents_permission
   end
 
   def getId
@@ -26,9 +26,10 @@ class Person
     @age = age
   end
 
-  private 
-  def is_of_age? 
-    if @age >= 18 
+  private
+
+  def is_of_age?
+    if @age >= 18
       puts true
     else
       puts false
@@ -36,8 +37,8 @@ class Person
   end
 
   def can_use_services?
-    if @age >= 18 || @parents_permission == true
-      puts true
-    end
-  end  
+    return unless @age >= 18 || @parents_permission == true
+
+    puts true
+  end
 end

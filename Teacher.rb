@@ -1,4 +1,4 @@
-require './Person'
+require './person'
 
 class Teacher < Person
   def initialize(specialization)
@@ -7,5 +7,5 @@ class Teacher < Person
 
   def can_use_services?
     puts true
-  end  
+  end
 end
