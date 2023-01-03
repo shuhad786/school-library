@@ -5,9 +5,9 @@ class Person < Nameable
 
   def initialize(id, name, age, parents_permission = 'Unknown')
     @id = id,
-    @name = name,
-    @age = age,
-    @parents_permission = parents_permission
+          @name = name,
+          @age = age,
+          @parents_permission = parents_permission
     super
   end
 
