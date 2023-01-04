@@ -4,7 +4,7 @@ require './trimmer_decorator'
 require './rental'
 
 class Person < Nameable
-  attr_accessor :name, :age
+  attr_accessor :name, :age, :rental
   attr_reader :id
 
   def initialize(id, name, age, parents_permission = 'Unknown')
