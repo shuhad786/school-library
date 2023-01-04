@@ -12,7 +12,7 @@ class Person < Nameable
           @name = name,
           @age = age,
           @parents_permission = parents_permission
-          @rental = []
+    @rental = []
     super()
   end
 
