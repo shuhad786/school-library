@@ -3,9 +3,9 @@ require './person'
 class Student < Person
   attr_accessor :classroom
 
-  def initialize(id, name, age, classroom, parents_permission = 'Unknown')
+  def initialize(name, age, classroom, parents_permission: true)
     @classroom = classroom
-    super(id, name, age, parents_permission)
+    super(name, age, parents_permission: parents_permission)
   end
 
   def play_hooky
