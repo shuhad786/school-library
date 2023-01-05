@@ -38,19 +38,19 @@ class App
     when '1'
       print 'Age: '
       stu_age = gets.chomp
-      
+
       print 'Name: '
       stu_name = gets.chomp
-      
+
       print 'Has parents permission [Y/N]: '
       permission = gets.chomp.downcase
       if permission == 'y'
         parents_permission = true
-      else 
+      else
         parents_permission = false
       end
 
-      @persons.push(Student.new(stu_name, stu_age, permission))
+      @persons.push(Student.new(stu_name, stu_age, parents_permission))
 
     when '2'
       print 'Age: '
@@ -65,7 +65,7 @@ class App
       @persons.push(Teacher.new(teacher_name, teacher_age, specialization))
     end
 
-    puts "Person created successfully"
+    puts 'Person created successfully'
   end
 
   def create_book
@@ -78,7 +78,7 @@ class App
     puts
 
     @books.push(Book.new(title, author))
-    puts "Book created successfully"
+    puts 'Book created successfully'
   end
 
   def create_rental()
