@@ -38,33 +38,25 @@ class App
     when '1'
       print 'Age: '
       stu_age = gets.chomp
-
       print 'Name: '
       stu_name = gets.chomp
-
       print 'Has parents permission [Y/N]: '
       permission = gets.chomp.downcase
-      if permission == 'y'
+      y = if permission
         parents_permission = true
       else
         parents_permission = false
       end
-
       @persons.push(Student.new(stu_name, stu_age, parents_permission))
-
     when '2'
       print 'Age: '
       teacher_age = gets.chomp
-
       print 'Name: '
       teacher_name = gets.chomp
-
       print 'Specialization: '
       specialization = gets.chomp
-
       @persons.push(Teacher.new(teacher_name, teacher_age, specialization))
     end
-
     puts 'Person created successfully'
   end
 
