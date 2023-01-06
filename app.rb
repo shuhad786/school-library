@@ -38,7 +38,7 @@ class App
     case creation
     when '1'
       print 'Age: '
-      stu_age = gets.chomp.to_s
+      stu_age = gets.chomp.to_i
       print 'Name: '
       stu_name = gets.chomp
       print 'Has parents permission [Y/N]: '
