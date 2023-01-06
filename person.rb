@@ -9,11 +9,11 @@ class Person < Nameable
 
   def initialize(name, age, parents_permission: true)
     @id = Random.rand(1..1000),
-                    @name = name,
-                    @age = age,
-                    @parents_permission = parents_permission
-                    @rental = []
-                    super()
+          @name = name,
+          @age = age,
+          @parents_permission = parents_permission
+    @rental = []
+    super()
   end
 
   private

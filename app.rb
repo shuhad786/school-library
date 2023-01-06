@@ -42,11 +42,7 @@ class App
       stu_name = gets.chomp
       print 'Has parents permission [Y/N]: '
       permission = gets.chomp.downcase
-      y = if permission
-        parents_permission = true
-      else
-        parents_permission = false
-      end
+      parents_permission = permission == 'y'
       @persons.push(Student.new(stu_name, stu_age, parents_permission))
     when '2'
       print 'Age: '
@@ -73,7 +69,7 @@ class App
     puts 'Book created successfully'
   end
 
-  def create_rental()
+  def create_rental
     puts 'Select a book from the following list by number'
     list_all_books
     book_number = gets.chomp.to_i

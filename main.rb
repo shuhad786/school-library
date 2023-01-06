@@ -32,7 +32,7 @@ def main
     when 6
       app.list_rentals_for_id
     when 7
-      puts 'Thank you for using this app!'
+      puts 'Thank you For using this app!'
       exit
     end
   end
