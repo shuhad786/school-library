@@ -5,9 +5,11 @@ class Rental
     @date = date
 
     @book = book
-    book['rentals'] = self
+    #book['rentals'] = self
+    book.rentals << self
 
     @person = person
-    person['rentals'] = self
+    #person['rentals'] = self
+    person.rental << self
   end
 end
