@@ -106,11 +106,11 @@ class App
     puts 'Select a book from the following list by number'
     list_all_books
     book_number = gets.chomp.to_i
-  
+
     puts 'Select a person from the following list by number (not id)'
     list_all_persons
     person_number = gets.chomp.to_i
-  
+
     print 'Date: '
     date = gets.chomp
     book = Book.new(@books[book_number]['title'], @books[book_number]['author'])
