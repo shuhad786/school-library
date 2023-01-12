@@ -29,4 +29,18 @@ module DataSaver
     end
   end
 
+  def save_rental(rentals)
+    File.write('./data_stored/rentals.json', JSON.pretty_generate(rentals))
+  end
+
+  def load_rentals
+    if File.exist?('./data_stored/rentals.json')
+      listrentals = File.open('./data_stored/rentals.json')
+      info = listrentals.read
+      JSON.parse(info)
+    else
+      File.write('./data_stored/rentals.json', [])
+    end
+  end
+
 end
