@@ -1,5 +1,5 @@
-require_relative '../book'
-require_relative '../person'
+require '../book'
+require '../person'
 
 describe Book do
   context 'Given an instance of a book' do
