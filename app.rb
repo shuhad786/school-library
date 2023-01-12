@@ -81,7 +81,7 @@ class App
         id: add_teacher.id[0],
         type: add_teacher.class,
         name: add_teacher.name,
-        age: add_teacher.age,
+        age: add_teacher.age
       }
       save_person(@persons)
     end

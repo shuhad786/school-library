@@ -42,5 +42,4 @@ module DataSaver
       File.write('./data_stored/rentals.json', [])
     end
   end
-
 end
