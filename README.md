@@ -148,6 +148,8 @@ Example commands:
 ### Install
 
 Install this project with:
+gem install colorize
+gem install json
 
 <!--
 Example command:
