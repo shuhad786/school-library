@@ -1,7 +1,5 @@
-require './book'
 require './person'
 
-book = Book.new('Gone in 60 seconds', 'Shuhad')
 person = Person.new('Steve', 45)
 
 describe Person do
