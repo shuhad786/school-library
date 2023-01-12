@@ -103,25 +103,29 @@ class App
   end
 
   def create_rental
-    puts 'Select a book from the following list by number'.yellow
+    puts 'Select a book from the following list by number'
     list_all_books
     book_number = gets.chomp.to_i
 
-    puts 'Select a person from the following list by number (not id)'.yellow
+    puts 'Select a person from the following list by number (not id)'
     list_all_persons
     person_number = gets.chomp.to_i
 
-    print 'Date: '.yellow
+    print 'Date: '
     date = gets.chomp
-    add_rental = Rental.new(date, @books[book_number], @persons[person_number])
+    book = Book.new(@books[book_number]['title'], @books[book_number]['author'])
+    person = Person.new(@persons[person_number]['name'], @persons[person_number]['id'])
+    add_rental = Rental.new(date, book, person)
+    arr = []
     @rentals << {
       date: add_rental.date,
-      person_id: add_rental.person['id'][0],
-      person_name: add_rental.person['name'],
-      title: add_rental.book['title'],
-      author: add_rental.book['author']
+      person_id: add_rental.person.id,
+      person_name: add_rental.person.name,
+      title: add_rental.book.title,
+      author: add_rental.book.author,
+      rentals: arr << add_rental.person.rental
     }
-    puts 'Rental created successfully'.green
+    puts 'Rental created successfully'.yellow
     save_rental(@rentals)
   end
 

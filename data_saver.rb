@@ -25,7 +25,7 @@ module DataSaver
       info = listpeople.read
       JSON.parse(info)
     else
-      File.write('./data_stored/person.json' [])
+      File.write('./data_stored/person.json', [])
     end
   end
 
