@@ -198,12 +198,17 @@ Example:
 
 <!-- AUTHORS -->
 
-## 👥 Author <a name="authors"></a>
+## 👥 Authors <a name="authors"></a>
 
 👤 **Shuhad Loofer**
 
 - GitHub: [@Shuhad786](https://github.com/shuhad786)
 - LinkedIn: [Shuhad Loofer](https://www.linkedin.com/in/shuhad-loofer/)
+
+👤 **Kaweesi Matia**
+- GitHub: [@Kaweesi-Matia](https://github.com/Kaweesi-Matia)
+- Twitter: [@kaweesimatia](https://twitter.com/kaweesimatia)
+- LinkedIn: [Kaweesi Matia](https://www.linkedin.com/in/kaweesi-matia/)
 
 <!-- FUTURE FEATURES -->
 
